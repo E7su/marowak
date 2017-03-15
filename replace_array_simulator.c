@@ -21,9 +21,9 @@ void insrt(int val,  int pos,  int* p)
 void print(int size, int* p)
 {
 	int i;
-		for (i = 0; i<size; i++ )
+		for (i = 0; i < size; i++ )
 	{
-			printf("a[%d]  = %d\n", i, *(p + i));
+			printf("a[%d] = %d\n", i, *(p + i));
 	}
 	printf("\n");
 }
@@ -40,8 +40,8 @@ int del(int pos, int* p)
 		*(p + i) = tmp;
 		*(p + i + 1) = tmp;
 	}
-	size -= 1;
-	p = realloc(p, size*4);
+	size-= 1;
+	p = realloc(p, size * 4);
 	return dl;
 }
 
